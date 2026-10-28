@@ -1,0 +1,29 @@
+Verbatim request given to Claude (claude.ai, Claude Opus 5.5, claude-opus-5-5) on 2026-10-27.
+Claude then read HANDOUT.md, README.md, RUBRIC.md and the files in this repository and drafted
+Parts 1-5 and Part 7 and the Part 6 adjudication and critique from them.
+
+---
+
+Assignment 3: Requirements and Specifications
+Objective:
+For this individual assignment, you will take one real interview about late equipment pickups at a university media lab and turn it into requirements, a precise specification, and passing tests, without inventing anything the interview does not say. You will build an evidence log, find the traps in the interview, write user stories and acceptance criteria, specify one requirement with types and contracts, turn three criteria into pytest tests, and check an AI's ambiguity audit and a synthetic user's claims against the real transcript. This assignment uses the Week 5 requirements lecture and the Week 6 specifications lecture.
+Why this Assignment matters in Industry:
+- Product teams interview users before they build. The notes that reach engineers often contain the mistakes you will catch here: a compliment read as demand, a prediction read as behavior, one person's view read as everyone's.
+- Agile teams turn conversations into user stories and Given-When-Then criteria every sprint, and those criteria become the tests that decide when a ticket is done.
+- When an AI coding agent writes the code, a short spec with its open questions marked is what stops the agent from guessing and shipping the guess with passing tests.
+- Checking an AI summary or an AI review against the source is now routine work, and it is the same true or false positive judgment you make.
+- Aviation, automotive, and medical-device software standards require tracing every requirement to its tests. The ledger adds a record of what AI produced and how it was checked, which is what lets a reviewer trust the work.
+Assignment Instructions:
+* Clone the assignment repository from GitHub: [git@github.com:md685-njit/Assignment-3.git](https://njit.instructure.com/http://git@github.com:md685-njit/Assignment-3.git)
+* Read HANDOUT.md, README.md, in the Assignment-3 folder before you start. The handout contains every step in detail.
+* Create a new repository on your GitHub account.
+* Set up your environment by following the README, and run python -m pytest -q to confirm the starter passes.
+* Complete Parts 1 to 7 in the handout: the evidence log, the evidence audit, four requirements with INVEST checks, three acceptance criteria, the specification, three tests, and the AI audit and synthetic-user critique.
+* Run the AI audit exactly once with the prompt in prompts/, and save the complete, unedited response in results/ambiguity_audit.md.
+* Write exactly three tests in tests/test_student_acceptance.py. Do not edit reference/ or tests/test_reference_smoke.py. All tests must pass.
+* Fill in traceability/template.csv, and keep LEDGER.md as you work, with an entry for the AI audit and for any other AI help you keep.
+* Write your report as one PDF with your name, Parts 1 to 7, the final python -m pytest -q output, and your final commit SHA (git rev-parse HEAD).
+Grading Expectations:
+An evidence log and audit that cite the transcript and keep uncertainty open, requirements and acceptance criteria that trace to evidence without settling disputed policy, a complete specification with typed interface, contracts, and open questions, three passing tests traced to their criteria, a correct judgment of every AI finding and synthetic claim, and a provenance ledger that meets the required format. The full breakdown is in RUBRIC.md.
+Submission Instructions:
+Submit two items to Canvas: your PDF report, and the link to your GitHub repository.
